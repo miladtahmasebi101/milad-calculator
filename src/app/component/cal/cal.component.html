@@ -1,0 +1,48 @@
+<div class="container">
+
+    <div style="background-color: rgb(6, 1, 12); " class="row ">
+
+        <h1 style="color: rgb(224, 103, 194);width: 100%; " class="text-center ">Miladt Calculator</h1>
+
+        <!-- Displays the User Input -->
+        <div style="height: 35px;width: 360px;color: rgb(250, 243, 243); " class=" ">
+            <div class=" " type="text " placeholder="input "> {{input}}</div>
+        </div>
+
+        <!-- Displays the Results -->
+        <div style="height: 35px; width: 360px;color: rgb(255, 255, 255);font-size:x-large; " class=" ">
+            <div class=" " type="text ">{{result}}</div>
+        </div>
+
+        <div class="row">
+            <button style="background-color: rgb(54, 49, 49); " class="btn0 " type="button " (click)="allClear() ">AC</button>
+            <button style="background-color: rgb(54, 49, 49); " class="btnX " type="button " (click)="clear() ">x</button>
+            <button class="btnX " type="button " (click)="pressOperator( '/') ">/</button>
+        </div>
+
+        <div class="row ">
+            <button class="btn1 " type="button " (click)="pressNum( '7') ">7</button>
+            <button class="btn1 " type="button " (click)="pressNum( '8') ">8</button>
+            <button class="btn1 " type="button " (click)="pressNum( '9') ">9</button>
+            <button class="btnX " type="button " (click)="pressOperator( '*') ">X</button>
+        </div>
+        <div class="row ">
+            <button class="btn1 " type="button " (click)="pressNum( '5') ">5</button>
+            <button class="btn1 " type="button " (click)="pressNum( '6') ">6</button>
+            <button class="btn1 " type="button " (click)="pressNum( '4') ">4</button>
+            <button class="btnX " type="button " (click)="pressOperator( '-') ">-</button>
+        </div>
+        <div class="row ">
+            <button class="btn1 " type="button " (click)="pressNum( '1') ">1</button>
+            <button class="btn1 " type="button " (click)="pressNum( '2') ">2</button>
+            <button class="btn1 " type="button " (click)="pressNum( '3') ">3</button>
+            <button class="btnX " type="button " (click)="pressOperator( '+') ">+</button>
+        </div>
+        <div class="row ">
+            <button class="btn0 " type="button " (click)="pressNum( '0') ">0</button>
+            <button class="btn1 " type="button " (click)="pressNum( '.') ">.</button>
+
+            <button class="btnX " type="button " (click)="getAnswer() ">=</button>
+        </div>
+
+    </div>
